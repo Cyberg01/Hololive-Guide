@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="243dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_pic1"/>
+
+    <ImageView
+        style="@style/contraint_layout_standartthird"
+        android:layout_width="78dp"
+        android:layout_height="152dp"
+        android:src="@drawable/bg_pic2"
+        app:layout_constraintBottom_toTopOf="@id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/contraint_layout_standart"
+        android:layout_width="254dp"
+        android:layout_height="72dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hololive_production"/>
+
+    <ImageView
+        style="@style/contraint_layout_holo"
+        android:layout_marginTop="64dp"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:src="@drawable/holomember" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

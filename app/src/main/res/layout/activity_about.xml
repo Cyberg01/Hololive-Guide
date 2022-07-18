@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="243dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_pic1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        style="@style/contraint_layout_standartthird"
+        android:layout_width="78dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/bg_pic2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        style="@style/contraint_layout_standartfourth"
+        android:layout_width="96dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="112dp"
+        android:background="@null"
+        android:src="@drawable/bg_pic3"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        style="@style/contraint_layout_standartfifth"
+        android:layout_width="180dp"
+        android:layout_height="326dp"
+        android:src="@drawable/bg_pic4"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        style="@style/contraint_layout_standart"
+        android:layout_width="308dp"
+        android:layout_height="475dp"
+        app:cardCornerRadius="8dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profil_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ananta"
+                app:civ_border_color="@color/border_color"
+                app:civ_border_width="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="64dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/Nama"
+                android:textColor="@color/primaryText_color"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profil_pic"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <ImageButton
+                android:id="@+id/copy_email"
+                style="@style/button"
+                android:layout_marginEnd="64dp"
+                android:src="@drawable/ic_copy"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/share_email"
+                style="@style/button"
+                android:layout_marginStart="64dp"
+                android:src="@drawable/ic_share"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

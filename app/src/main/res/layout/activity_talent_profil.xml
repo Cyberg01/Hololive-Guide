@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/talentprofil"
+    tools:context=".TalentProfil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/contraint_layout_standart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rv_talentpic"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="352dp"
+                android:elevation="10dp"
+                tools:src="@drawable/tokino_sora"/>
+
+            <TextView
+                android:id="@+id/rv_quotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                tools:text="@string/quote"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/talent_youtubech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_youtube"/>
+
+                <ImageButton
+                    android:id="@+id/talent_webio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/ic_web"/>
+
+                <ImageButton
+                    android:id="@+id/talent_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_twitter"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rv_talentname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Tokino Sora"
+                style="@style/heading_2_font"
+                />
+
+            <TextView
+                android:id="@+id/rv_talentDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Yagoo dream"
+                android:textColor="@color/primaryText_color"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/heading_2_font"
+                android:text="@string/more_detail"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="@string/nickname_s"/>
+
+                    <TextView
+                        android:id="@+id/rv_talent_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:lineSpacingMultiplier="1.4"
+                        android:text="@string/debute"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="@string/debute_date"/>
+
+                    <TextView
+                        android:id="@+id/rv_debute_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:lineSpacingMultiplier="1.4"
+                        android:text="@string/debute"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="@string/birthday"/>
+
+                    <TextView
+                        android:id="@+id/rv_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/_15_may_2000"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="@string/height"/>
+
+                    <TextView
+                        android:id="@+id/rv_talent_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/_15_may_2000"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="Fanbase name: "/>
+
+                    <TextView
+                        android:id="@+id/rv_talent_fanbase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/_15_may_2000"/>
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="@string/illustrator"/>
+
+                    <TextView
+                        android:id="@+id/rv_talent_illustrator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/_15_may_2000"/>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row">
+
+                    <TextView
+                        style="@style/table_row_font"
+                        android:text="@string/affiliation"/>
+
+                    <TextView
+                        android:id="@+id/rv_talent_affiliation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/_15_may_2000"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

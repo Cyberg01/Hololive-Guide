@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="243dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_pic1"/>
+
+    <ImageView
+        style="@style/contraint_layout_standartthird"
+        android:layout_width="78dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/bg_pic2"/>
+
+    <ImageView
+        style="@style/contraint_layout_standartfourth"
+        android:layout_width="96dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="112dp"
+        android:src="@drawable/bg_pic3"/>
+
+    <ImageView
+        style="@style/contraint_layout_standartfifth"
+        android:layout_width="180dp"
+        android:layout_height="326dp"
+        android:src="@drawable/bg_pic4"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_talent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_row_member"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
